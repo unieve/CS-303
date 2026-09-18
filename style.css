@@ -64,3 +64,41 @@ nav a {
     line-height: 1.5;
 }
 
+.scary-main {
+    text-align: center;
+    padding: 30px;
+    background-color: #e7d3b8;
+}
+
+.scary-main img {
+    max-width: 100%;
+    height: auto;
+}
+
+#cute img {
+    width: 300px;
+}
+
+#monsters img {
+    width: 200px;
+    margin: 10px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+#scaryButton {
+    background-color: #4a2020;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#scaryButton:hover {
+    background-color: #8b0000;
+}

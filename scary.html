@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scary Halloween</title>
+</head>
+
+<body class="spooky">
+<div>
+
+    <header>
+        <h1>Halloween</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pumpkin.html">Pumpkin</a></li>
+            <li><a href="scary.html">Scary</a></li>
+            <li><a href="">Monsters</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Cute or Scary?</h2>
+
+        <div id="cute">
+            <h3>Cute Halloween</h3>
+            <img src="cute.png" alt="Cute Halloween ghost">
+            <p>Welcome to our cute Halloween world!</p>
+            <p>🐱 🎃 🐰</p>
+        </div>
+
+        <div id="monsters" hidden>
+            <h3>Scary Monsters!</h3>
+            <img src="monster1.jpeg" alt="Solar monster">
+            <img src="monster2.jpeg" alt="Moon monster">
+            <img src="monster3.jpeg" alt="Star monster">
+        </div>
+
+
+        <button id="scaryButton" onclick="toggleScary()">
+            Scare Me!
+        </button>
+    </main>
+
+    <footer>
+        <p>Happy Halloween!</p>
+    </footer>
+
+</div>
+<script>
+    let isScary = false;
+
+    function toggleScary() {
+        isScary = !isScary;
+
+        document.getElementById("cute").hidden = isScary;
+        document.getElementById("monsters").hidden = !isScary;
+    }
+</script>
+</body>
+</html>
